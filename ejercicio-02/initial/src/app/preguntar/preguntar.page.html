@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Preguntar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <form (ngSubmit)="save()"  [formGroup]="editForm">
+    <ion-list lines="full" class="ion-no-margin ion-no-padding">
+      <ion-item>
+        <ion-label position="stacked">Usuario <ion-text color="danger">*</ion-text>
+        </ion-label>
+        <ion-input   formControlName="nombreUsuario"  required type="text" ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Preguna<ion-text color="danger">*</ion-text>
+        </ion-label>
+        <ion-input required type="text" formControlName="preguntaTitulo"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Descripción<ion-text color="danger">*</ion-text>
+        </ion-label>
+        <ion-input required type="text" formControlName="preguntaDescripcion"></ion-input>
+      </ion-item>
+    </ion-list>
+    <div class="ion-padding">
+      <ion-button expand="block" type="submit" class="ion-no-margin">Crear pregunta</ion-button>
+    </div>
+  </form>
+
+</ion-content>
