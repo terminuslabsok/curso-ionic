@@ -1,0 +1,9 @@
+{
+  "appId": "io.ionic.starter",
+  "appName": "New Ionic App",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "cordova": {},
+  "linuxAndroidStudioPath": "/media/rodrigo/Data/Linux/Programas/android-studio/bin/studio.sh"
+}
