@@ -17,6 +17,7 @@ Tener cuidado que el plugin no está disponible para todos los dispositivos.
 Se añade lógica en la paágina de visualización de preguntas.
 
 ## Notificaciones push
+Para las notificaciones push seguir la siguiente guía https://capacitor.ionicframework.com/docs/guides/push-notifications-firebase
 
 
 
