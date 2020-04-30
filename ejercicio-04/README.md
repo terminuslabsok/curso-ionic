@@ -1,12 +1,12 @@
-# Ejercicio 3
+# Ejercicio 4
 
 Llamada a servicios usando RX-JS
 
 
-Los servicios fueron actualizados a llamadas REST realizar, la subscripcion en los respectivos componentes de la siguiente forma
+Los servicios fueron actualizados a llamadas REST que retornan observables, realizar la subscripcion en los respectivos componentes de la siguiente forma
 
 ```ts
-subscribe(
+myObserbable.subscribe(
   value => {
    ... 
   },
