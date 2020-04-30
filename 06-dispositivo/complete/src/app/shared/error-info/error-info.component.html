@@ -1,0 +1,25 @@
+<div>
+
+  
+  <div id="notfound">
+    <div class="notfound">
+      <div class="notfound-bg">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <h1>oops!</h1>
+      <ul  style="list-style-type:none">
+          <li *ngFor="let mensaje of mensajeError" [innerHTML]=mensaje></li>
+        </ul>
+      <ion-button (click)="reintentar()">Reintentar</ion-button>
+    </div>
+  </div>
+
+
+
+
+
+
+
+</div>

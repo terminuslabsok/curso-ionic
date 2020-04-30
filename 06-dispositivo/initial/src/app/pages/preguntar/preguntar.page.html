@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Preguntar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <app-error-info *ngIf="estadoPagina.error()" [error]="estadoPagina.detalleError" (reintentarClick)="save()"></app-error-info>
+  <div class="contenido-cargando" *ngIf="estadoPagina.cargado()">
+    <ion-spinner item-start></ion-spinner>
+  </div>
+
+  <form (ngSubmit)="save()"  [formGroup]="editForm" *ngIf="estadoPagina.datosCargados()">
+    <ion-list lines="full" class="ion-no-margin ion-no-padding">
+      <ion-item>
+        <ion-label position="stacked">Usuario <ion-text color="danger">*</ion-text>
+        </ion-label>
+        <ion-input   formControlName="nombreUsuario"  required type="text" ></ion-input>
+      </ion-item>
+      <app-error-input [control]="editForm.get('nombreUsuario')" [validationMessages]="validationMessages['nombreUsuario']"></app-error-input>
+
+
+      <ion-item>
+        <ion-label position="stacked">Preguna<ion-text color="danger">*</ion-text>
+        </ion-label>
+        <ion-input required type="text" formControlName="preguntaTitulo"></ion-input>
+      </ion-item>
+      <app-error-input [control]="editForm.get('preguntaTitulo')" [validationMessages]="validationMessages['preguntaTitulo']"></app-error-input>
+
+
+      <ion-item>
+        <ion-label position="stacked">Descripción<ion-text color="danger">*</ion-text>
+        </ion-label>
+        <ion-input required type="text" formControlName="preguntaDescripcion"></ion-input>
+      </ion-item>
+      <app-error-input [control]="editForm.get('preguntaDescripcion')" [validationMessages]="validationMessages['preguntaDescripcion']"></app-error-input>
+
+
+    </ion-list>
+    <div class="ion-padding">
+      <ion-button expand="block" type="submit" class="ion-no-margin">Crear pregunta</ion-button>
+    </div>
+  </form>
+
+</ion-content>
