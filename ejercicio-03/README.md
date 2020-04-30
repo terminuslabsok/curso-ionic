@@ -25,7 +25,7 @@ Se añade capacitor al proyecto
 ionic integrations enable capacitor
 npx cap add android
 ```
-Se eliminan los plugins de cordova que capacitor ya incluye de forma nativa
+Se eliminan los plugins de cordova que capacitor ya incluye 
 
 ```bash
 npm uninstall @ionic-native/core @ionic-native/splash-screen @ionic-native/status-bar --save
