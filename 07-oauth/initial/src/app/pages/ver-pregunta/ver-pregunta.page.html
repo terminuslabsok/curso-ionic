@@ -1,0 +1,40 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons>
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-buttons slot="secondary">
+      <ion-button (click)="compartir()">
+        <ion-icon slot="icon-only" name="share-social-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" >
+  <app-error-info *ngIf="estadoPagina.error()" [error]="estadoPagina.detalleError" (reintentarClick)="cargarPregunta()"></app-error-info>
+ 
+  <div class="contenido-cargando" *ngIf="estadoPagina.cargado()">
+    <ion-spinner item-start></ion-spinner>
+  </div>
+
+  <div *ngIf="estadoPagina.datosCargados()" >
+    <ion-item>
+      <ion-avatar >
+        <img src="{{pregunta.avatarUrl ? pregunta.avatarUrl : 'assets/profile.png'}}">
+      </ion-avatar>
+      <ion-label class="ion-text-wrap  ion-padding-start" >
+        <h2>
+          {{ pregunta.nombreUsuario }}
+        </h2>
+      </ion-label>
+    </ion-item>
+    
+    <div class="ion-padding">
+      <h1>{{ pregunta.preguntaTitulo }}</h1>
+      <p>
+        {{pregunta.preguntaDescripcion}}
+      </p>
+    </div>
+  </div>
+</ion-content>
