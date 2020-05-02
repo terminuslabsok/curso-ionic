@@ -27,7 +27,7 @@ npm install -g @ionic/cli  cordova
 - Android Studio (para compilar en Android)
 - Xcode (para compilar en ios)
 
-## 3- Extensiones para Visual Studio Code
+## 4- Extensiones para Visual Studio Code
 - [AB HTML Formatter](https://marketplace.visualstudio.com/items?itemName=zovorap.ab-html-formatter)
 - [Angular 8 Snippets](https://marketplace.visualstudio.com/items?itemName=Mikael.Angular-BeastCode)
 - [Angular Language Service](https://marketplace.visualstudio.com/items?itemName=Angular.ng-template)
