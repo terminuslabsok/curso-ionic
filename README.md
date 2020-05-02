@@ -20,7 +20,7 @@ npm install -g @ionic/cli  cordova
 ```
 
 
-## 3- Otras herramientas necesarias
+## 3- Otras herramientas
 - Visual Studio Code
 - Google Chrome
 - Postman 
@@ -28,7 +28,6 @@ npm install -g @ionic/cli  cordova
 - Xcode (para compilar en ios)
 
 ## 3- Extensiones para Visual Studio Code
-Utilizadas por mí
 - [AB HTML Formatter](https://marketplace.visualstudio.com/items?itemName=zovorap.ab-html-formatter)
 - [Angular 8 Snippets](https://marketplace.visualstudio.com/items?itemName=Mikael.Angular-BeastCode)
 - [Angular Language Service](https://marketplace.visualstudio.com/items?itemName=Angular.ng-template)
