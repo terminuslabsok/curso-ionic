@@ -19,7 +19,7 @@ En el archivo app-routing.module.ts
 Cambiar
 
 ```ts
-path: 'ver-pregunta/:id'
+path: 'ver-pregunta'
 ```
 por
 
@@ -28,7 +28,7 @@ path: 'preguntas/:id'
 ```
 
 ## 3- Modificar el componente
-Añadir la lóginca en el archivo ver-pregunta.page.ts
+Añadir la lógica en el archivo ver-pregunta.page.ts
 
 ```ts
 import { Component, OnInit } from '@angular/core';
