@@ -8,7 +8,7 @@ Tomar cómo guia el template de app de listas que probee ionic
 ## 1- Crear una nueva página
 
 ```bash
-ng g page verPregunta
+ionic g page verPregunta
 ```
 
 ## 2- Modificar la ruta 
@@ -19,7 +19,7 @@ En el archivo app-routing.module.ts
 Cambiar
 
 ```ts
-path: 'ver-pregunta/:id'
+path: 'ver-pregunta'
 ```
 por
 
@@ -28,7 +28,7 @@ path: 'preguntas/:id'
 ```
 
 ## 3- Modificar el componente
-Añadir la lóginca en el archivo ver-pregunta.page.ts
+Añadir la lógica en el archivo ver-pregunta.page.ts
 
 ```ts
 import { Component, OnInit } from '@angular/core';
