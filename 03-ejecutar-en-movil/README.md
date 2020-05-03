@@ -100,7 +100,7 @@ export class AppComponent {
 ```
 Correr usando capacitor
 ```bash
-ng build --prod
+ionic build --prod
 npx cap copy
 npx cap open android
 npx cap open ios
