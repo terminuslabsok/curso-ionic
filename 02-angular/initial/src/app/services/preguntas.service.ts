@@ -46,5 +46,14 @@ export class PreguntasService {
     p.id = this.preguntas.length + 1;
     this.preguntas.unshift(p);
   }
+  
+  
+  getPregunta(id: number) {
+    for (let p of this.preguntas) {
+      if (p.id === id) {
+        return p;
+      }
+    }
+  }
 
 }
