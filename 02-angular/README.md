@@ -8,7 +8,7 @@ Tomar cómo guia el template de app de listas que probee ionic
 ## 1- Crear una nueva página
 
 ```bash
-ng g page verPregunta
+ionic g page verPregunta
 ```
 
 ## 2- Modificar la ruta 
